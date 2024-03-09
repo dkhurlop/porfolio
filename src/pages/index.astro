@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import LinkedInicon from '../components/icons/LinkedIn.astro';
+import SocialPill from '../components/SocialPill.astro';
+import GitHubicon from '../components/icons/Github.astro';
+import MailIcon from '../components/icons/MailIcon.astro';
+---
+
+<Layout title="Porfolio Denise Khurlopian. Desarrollador y programador web"
+description="contrata a Denise Khurlopian para desarrollar webs.">
+	<main>
+		<section class="w-full mx-auto lg:w-[740px] py-10">
+			<img class="rounded-full size-20 mb-4" src="https://media.licdn.com/dms/image/D4D03AQFVqOjM7JgnOA/profile-displayphoto-shrink_200_200/0/1709986990338?e=1715212800&v=beta&t=jKAAYjye8BqHjDGxS2XMAKIQiROVnI4EU39zBrgQ-2E" 
+    		alt="denise photo"/>
+			<h1 class="text-white text-4xl font-bold flex flex-row gap-x-4 pb-10">Hey, soy Denise Khurlopian 
+				<a href="https://www.linkedin.com/in/denise-khurlopian-97aa08183/"
+				target="_blank"
+				rel="noopener"
+				class="flex items-center"
+				>
+				<Badge>Disponible para trabajar</Badge>
+				</a>
+			</h1>
+			<h2 class="text-2xl text-wrap opacity-80 text-yellow-200">Desarrolladora Web, apasiada por este mundo y hambrienta por mostrar mi potencial</h2>
+		
+			<nav class="flex gap-x-4 mt-8">
+				<SocialPill href="https://www.linkedin.com/in/denise-khurlopian">
+					<LinkedInicon class="size-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/dkhurlop">
+					<GitHubicon class="size-6" />
+					GitHub
+				</SocialPill>
+				<SocialPill>
+					Descargar CV
+				</SocialPill>
+				<SocialPill>
+					<MailIcon class="size-6" />
+					Contactame
+			</nav>
+		</section>
+	</main>
+</Layout>
