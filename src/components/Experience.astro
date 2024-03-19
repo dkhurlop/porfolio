@@ -1,0 +1,33 @@
+---
+import ExprienceItem from "./ExprienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Actualidad",
+    title: "Freelance Developer",
+    description: "Desarrollo de proyectos utilizando tecnologias solicitadas por el cliente. HTML, CSS, JavaScript, React, PHP, Laravel, Bootstrap, Wordpress.",
+    link: "#",
+  },
+  {
+    date: "1/24-3/24",
+    title: "Frontend Developer",
+    description: "Maquetación y diseño de página web. Mantenimiento. Tecnologías utilizadas: Metodologías Agiles, HTML, CSS, JS React, Git, Figma.",
+    link: "#",
+  },
+  {
+    date: "4/24-10/23",
+    title: "FemCoders - Full Stack Developer",
+    description: "Proyectos realizados con metodologías ágiles, utilizando git y git flow para una mejor organizacion y estructura. Reuniones semanales con el cliente para resolver dudas y propuestas. Desarrollo con diferentes lenguajes y frameworks, en su mayoria, HTML5, CSS3, JS, Node.js y React para frony y PHP con laravel,base de datos MySQL para backed. Capacidad de adaptacion a diferentes herramientas como Bootstrap, Tailwind, Formik, Postman, Figma, VSC, Github, google developer tools.",
+    link: "#",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-4">
+  {
+    EXPERIENCE.map(experience => (
+        <li class="mb-10 ms-4">
+        <ExprienceItem {...experience} />
+    </li>
+        ))
+  }
+</ol>
